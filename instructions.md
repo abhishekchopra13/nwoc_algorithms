@@ -1,4 +1,4 @@
-#instructions.md
+# instructions.md
 
 Before contributing, check whether the algorithm has already been implemented or not.
 
