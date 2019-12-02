@@ -27,13 +27,13 @@ struct Node *newNode(int item)
 }
 
 // Storing Inorder traversal in array
-void storeSorted(Node *root, int arr[], int &i)
+void storeSorted(Node *root, int arr[], int &inx)
 {
 	if (root != NULL)
 	{
-		storeSorted(root->left, arr, i);
-		arr[i++] = root->key;
-		storeSorted(root->right, arr, i);
+		storeSorted(root->left, arr, inx);
+		arr[inx++] = root->key;
+		storeSorted(root->right, arr, inx);
 	}
 }
 
@@ -58,11 +58,11 @@ void treeSort(int arr[], int len)
 	struct Node *root = NULL;
 	root = insert(root, arr[0]);
 
-	for (int i=1; i<len; i++)
-        insert(root, arr[i]);
+	for (int inx=1; inx<len; inx++)
+        insert(root, arr[inx]);
 
-	int i = 0;
-	storeSorted(root, arr, i);
+	int inx = 0;
+	storeSorted(root, arr, inx);
 }
 
 
@@ -72,17 +72,12 @@ int main()
   cout<<"Enter the Number of Elements ";
   cin>>len;
   int arr[len];
-
   cout<<"Enter The Elements ";
-  for (int i=0; i<len; i++)
-	  cin>>arr[i];
-
+  for (int inx=0; inx<len; inx++)
+	  cin>>arr[inx];
   treeSort(arr, len);
-  //Display Sorted Values
   cout<<"Sorted:\n";
-
-  for (int i=0; i<len; i++)
-     cout << arr[i] << " ";
-
+  for (int inx=0; inx<len; inx++)
+     cout << arr[inx] << " ";
 	return 0;
 }

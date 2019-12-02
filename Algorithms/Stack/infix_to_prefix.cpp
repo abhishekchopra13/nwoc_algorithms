@@ -19,18 +19,18 @@ using namespace std;
         return str;
     }
 
-    bool isOperator(char c)  //Check for operator
+    bool isOperator(char opr)
     {
-       return (!isalpha(c) && !isdigit(c));
+       return (!isalpha(opr) && !isdigit(opr));
     }
 
-    int getPriority(char C)  //Get priority of operators
+    int getPriority(char opr)  //Checks Priority of operators
     {
-      if (C == '-' || C == '+')
+      if (opr == '-' || opr == '+')
         return 1;
-      else if (C == '*' || C == '/')
+      else if (opr == '*' || opr == '/')
         return 2;
-      else if (C == '^')
+      else if (opr == '^')
         return 3;
       return 0;
     }
@@ -43,65 +43,41 @@ using namespace std;
       // stack for operands.
       stack<string> operands;
 
-      for (int i = 0; i < infix.length(); i++) {
+      for (int inx = 0; inx < infix.length(); inx++) {
 
-          // If current character is an
-          // opening bracket, then
-          // push into the operators stack.
-          if (infix[i] == '(') {
-              operators.push(infix[i]);
+          if (infix[inx] == '(') {
+              operators.push(infix[inx]);
           }
 
-          // If current character is a
-          // closing bracket, then pop from
-          // both stacks and push result
-          // in operands stack until
-          // matching opening bracket is
-          // not found.
-          else if (infix[i] == ')') {
+          else if (infix[inx] == ')') {
               while (!operators.empty() &&
                     operators.top() != '(') {
 
-                  // operand 1
                   string op1 = operands.top();
                   operands.pop();
 
-                  // operand 2
                   string op2 = operands.top();
                   operands.pop();
 
-                  // operator
                   char op = operators.top();
                   operators.pop();
 
-                  // Add operands and operator
-                  // in form operator +
-                  // operand1 + operand2.
                   string tmp = op + op2 + op1;
                   operands.push(tmp);
               }
 
-              // Pop opening bracket from
-              // stack.
               operators.pop();
           }
 
-          // If current character is an
-          // operand then push it into
-          // operands stack.
-          else if (!isOperator(infix[i])) {
-              operands.push(string(1, infix[i]));
+
+          else if (!isOperator(infix[inx])) {
+              operands.push(string(1, infix[inx]));
           }
 
-          // If current character is an
-          // operator, then push it into
-          // operators stack after popping
-          // high priority operators from
-          // operators stack and pushing
-          // result in operands stack.
+
           else {
               while (!operators.empty() &&
-                    getPriority(infix[i]) <=
+                    getPriority(infix[inx]) <=
                       getPriority(operators.top())) {
 
                   string op1 = operands.top();
@@ -117,14 +93,11 @@ using namespace std;
                   operands.push(tmp);
               }
 
-              operators.push(infix[i]);
+              operators.push(infix[inx]);
           }
       }
 
-      // Pop operators from operators stack
-      // until it is empty and add result
-      // of each pop operation in
-      // operands stack.
+
       while (!operators.empty()) {
           string op1 = operands.top();
           operands.pop();
@@ -139,8 +112,6 @@ using namespace std;
           operands.push(tmp);
       }
 
-      // Final prefix expression is
-      // present in operands stack.
       return operands.top();
   }
 

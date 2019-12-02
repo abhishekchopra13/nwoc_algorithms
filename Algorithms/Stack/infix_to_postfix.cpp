@@ -19,18 +19,18 @@ using namespace std;
         return str;
     }
 
-    bool isOperator(char c)
+    bool isOperator(char opr)
     {
-       return (!isalpha(c) && !isdigit(c));
+       return (!isalpha(opr) && !isdigit(opr));
     }
 
-    int getPriority(char C)  //Checks Priority of operators
+    int getPriority(char opr)  //Checks Priority of operators
     {
-      if (C == '-' || C == '+')
+      if (opr == '-' || opr == '+')
         return 1;
-      else if (C == '*' || C == '/')
+      else if (opr == '*' || opr == '/')
         return 2;
-      else if (C == '^')
+      else if (opr == '^')
         return 3;
       return 0;
     }
@@ -38,16 +38,16 @@ using namespace std;
     string infixToPostfix(string infix) //Conversion
     {
       infix = '(' + infix + ')';
-      int l = infix.size();
+      int len = infix.size();
       stack<char> char_stack;
       string output;
 
-      for (int i = 0; i < l; i++) {
-        if (isalpha(infix[i]) || isdigit(infix[i]))
-          output += infix[i];
-        else if (infix[i] == '(')
+      for (int inx = 0; inx < len; inx++) {
+        if (isalpha(infix[inx]) || isdigit(infix[inx]))
+          output += infix[inx];
+        else if (infix[inx] == '(')
           char_stack.push('(');
-        else if (infix[i] == ')') {
+        else if (infix[inx] == ')') {
           while (char_stack.top() != '(') {
             output += char_stack.top();
             char_stack.pop();
@@ -57,12 +57,12 @@ using namespace std;
         else {
 
           if (isOperator(char_stack.top())) {
-            while (getPriority(infix[i])
+            while (getPriority(infix[inx])
             <= getPriority(char_stack.top())) {
               output += char_stack.top();
               char_stack.pop();
             }
-            char_stack.push(infix[i]);
+            char_stack.push(infix[inx]);
           }
         }
       }
