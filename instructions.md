@@ -22,7 +22,7 @@ Before contributing, check whether the algorithm has already been implemented or
 
 1. Make a folder for your algorithm. The folder name should be descriptive. Use underscores instead of spaces.
 2. Put your program in that folder. Keep the program name as similar as possible to the folder name.
-3. Add documentation for your program.Algorithms without a basic documentation (description, input/output format, sample input/output) will **not** be accepted.
+3. Add documentation for your program.Algorithms without a basic documentation (description, input/output format, sample input/output) will **not** be accepted. See [disjoint_set_union.cpp](Algorithms/disjoint_set_union/disjoint_set_union.cpp) for example.
 4. Update the List of Algorithms in [README](README.md) with your algorithm.
 5. Commit and push the changes, then submit a Pull Request.
 
