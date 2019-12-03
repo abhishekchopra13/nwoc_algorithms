@@ -5,7 +5,7 @@ This is a library of various algorithms that are used in competitive programming
 [disjoint_set_union.cpp](Algorithms/disjoint_set_union/disjoint_set_union.cpp)
 
 ### sorting algorithm 
-[merge_sort.cpp](Algorithms/"Sorting Algorithms"/merge_sort.cpp)
+Merge Sort (merge_sort.cpp)
 
 
 READ instructions before making any pull request.
