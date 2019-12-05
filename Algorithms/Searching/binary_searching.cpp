@@ -1,3 +1,7 @@
+// Program to search in an array using binary search
+// Language used: C++
+// Author: ExpressHermes
+
 #include <bits/stdc++.h>
 using namespace std;
 

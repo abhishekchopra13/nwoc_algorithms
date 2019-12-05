@@ -1,5 +1,6 @@
-// Linear Searching in CPP 
-// code by @ExpressHermes
+// Program to search in an array using Linear Search
+// Language used: C++
+// Author: ExpressHermes
 
 
 #include <bits/stdc++.h>
