@@ -19,11 +19,24 @@ int main()
     		std::cout<<msg[i];
     		continue;
 		}
-    	if((char(msg[i]+step) >= 'A') && (char(msg[i]+step) <='Z'))
+		if((ch[0]-'C')>=0)   //Right Shift
+        {
+            if((char(msg[i]+step) >= 'A') && (char(msg[i]+step) <='Z'))
             std::cout<<char(msg[i]+step);
     	else if(char(msg[i]+step) >'Z')
             std::cout<<char(msg[i]+step-'Z'+'A'-1);
         else if(char(msg[i]+step) <'A')
             std::cout<<char('Z'-('A'-msg[i]-step) + 1);
+		}
+		else   //Left Shift
+		{
+            if((char(msg[i]-step) >= 'A') && (char(msg[i]-step) <='Z'))
+            std::cout<<char(msg[i]-step);
+    	else if(char(msg[i]-step) >'Z')
+            std::cout<<char(msg[i]-step-'Z'+'A'-1);
+        else if(char(msg[i]-step) <'A')
+            std::cout<<char('Z'-('A'-msg[i]+step) + 1);
+		}
+
 	}
 }
