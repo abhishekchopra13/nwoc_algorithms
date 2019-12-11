@@ -8,7 +8,7 @@ The basic solution or the first thing that comes to the mind upon reading the pr
 The input consists of one line.\
 There will be a single integer N, which is the number of criminals.
 ## **Output Format**
-The criminal number that stay alive.
+The criminal number(s) that stay alive.
 
 ## **Sample Input**
 9 
