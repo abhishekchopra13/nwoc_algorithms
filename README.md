@@ -6,3 +6,5 @@ This is a library of various algorithms that are used in competitive programming
 
 
 READ instructions before making any pull request.
+
+[z-algorithm.cpp](Algorithms/z-algorithm)
