@@ -9,3 +9,5 @@ Merge Sort (merge_sort.cpp)
 
 
 READ instructions before making any pull request.
+
+[z-algorithm.cpp](Algorithms/z-algorithm)
