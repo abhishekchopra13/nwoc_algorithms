@@ -19,8 +19,7 @@
 //  ABC+*D/
 
 
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 class InfixToPostfix{
     
