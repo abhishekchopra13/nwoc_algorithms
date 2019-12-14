@@ -19,15 +19,14 @@
 //  ABC+*D/
 
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
+import java.util.Stack;
 
 class InfixToPostfix{
     
-    public static int precision(char a)
+    public static int precision(char operator)
     {
-        switch(a)
+        switch(operator)
         {
             case '^':
                 return 3;
