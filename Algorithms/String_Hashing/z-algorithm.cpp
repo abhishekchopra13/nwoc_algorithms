@@ -1,5 +1,5 @@
-Description: This is an algorithm to find a word in the input string. The word can be a part of another word.
-Example. "ring" word is found the sentence "String is a data type in C++."
+//Description: This is an algorithm to find a word in the input string. The word can be a part of another word.
+//Example. "ring" word is found the sentence "String is a data type in C++."
 
 #include <iostream>
 #include <cstring>
@@ -17,7 +17,7 @@ bool zAlgorithm(string pattern, string target)
         if (k > r)
         {
             for (i = k; i < n && s[i] == s[i - k]; i++);
-if (i > k)
+	    if (i > k)
             {
                 z[k] = i - k;
                 l = k;
@@ -54,12 +54,12 @@ int main()
     return 0;
     }
     
-    INPUT / OUTPUT FORMAT: First input the string in which you want to find the word.
-    Then enter the word.
+ //   INPUT / OUTPUT FORMAT: First input the string in which you want to find the word.
+ //   Then enter the word.
     
-    SAMPLE INPUT: 
-    san and linux training
+ //   SAMPLE INPUT: 
+ //   san and linux training
     
-    SAMPLE OUTPUT:
-    'lin' found in string 'san and linux training'
+ //  SAMPLE OUTPUT:
+ //  'lin' found in string 'san and linux training'
     
