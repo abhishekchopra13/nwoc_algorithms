@@ -13,7 +13,7 @@ This is a library of various algorithms that are used in competitive programming
 [Bellman_Ford/BellmanFord.cpp] (Algorithm to find the single source shortest path in a graph with or without negative edges and negative weight cycle)
 
 ### Sorting algorithm 
-Merge Sort [merge_sort.cpp](Algorithms/Sorting/merge_sort.cpp) <br/ >
+Merge Sort [merge_sort.cpp](Algorithms/Sorting/merge_sort.cpp) <br/>
 Heap Sort [heap_sort.cpp](Algorithms/Sorting/heap_sort.cpp)<br/>
 Insertion Sort [insertion_sort.cpp](Algorithms/Sorting/insertion_sort.cpp) <br/>
 Bubble Sort [bubble_sort.cpp](Algorithms/Sorting/bubble_sort.cpp) <br/>
