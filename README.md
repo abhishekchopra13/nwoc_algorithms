@@ -23,3 +23,4 @@ Selection Sort [selection_sort.cpp](Algorithms/Sorting/selection_sort.cpp)
 Rabin Karp Algorithm [rabin_karp.cpp](Algorithms/String_Hashing/rabin_karp.cpp)<br/>
 Counting Number of different substrings in a string [count_substr.cpp](Algorithms/String_Hashing/count_substr.cpp) <br/>
 Z Algorithm [z-algorithm.cpp](Algorithms/String_Hashing/z-algorithm.cpp)
+Manacher Algorithm [manacher.cpp](Algorithms/String_Hashing/manacher.cpp) (Algorithm to find longest palindromic substring) <br/>
