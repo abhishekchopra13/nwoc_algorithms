@@ -24,3 +24,10 @@ Rabin Karp Algorithm [rabin_karp.cpp](Algorithms/String_Hashing/rabin_karp.cpp)<
 Counting Number of different substrings in a string [count_substr.cpp](Algorithms/String_Hashing/count_substr.cpp) <br/>
 Z Algorithm [z-algorithm.cpp](Algorithms/String_Hashing/z-algorithm.cpp)<br/>
 Manacher Algorithm [manacher.cpp](Algorithms/String_Hashing/manacher.cpp) (Algorithm to find longest palindromic substring) <br/>
+
+### Backtracking Algorithms
+[Hamiltonian Cycle](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/Hamiltonian%20Cycle.cpp)<br/>
+[M Coloring Problem](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/M%20Coloring%20Problem.cpp)<br/>
+[N Queen Problem](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/N%20Queen%20Problem.cpp)<br/>
+[Rat in a Maze](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/Rat%20in%20a%20Maze.cpp)<br/>
+[Sudoku](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/Sudoku.cpp)

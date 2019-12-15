@@ -25,11 +25,9 @@ bool isSafe(int maze[N][N], int x, int y)
 	return false; 
 } 
 
-/* This function solves the Maze problem using Backtracking. It mainly 
-uses solveMazeUtil() to solve the problem. It returns false if no 
+/* This function sreturns false if no 
 path is possible, otherwise return true and prints the path in the 
-form of 1s. Please note that there may be more than one solutions, 
-this function prints one of the feasible solutions.*/
+form of 1s.*/
 bool solveMaze(int maze[N][N]) 
 { 
 	int sol[N][N] = { { 0, 0, 0, 0 }, 
@@ -91,8 +89,9 @@ int main()
 } 
 
 
-Output:
+/* Output:
  1  0  0  0 
  1  1  0  0 
  0  1  0  0 
  0  1  1  1 
+*/

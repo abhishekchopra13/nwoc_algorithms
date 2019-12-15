@@ -10,8 +10,7 @@ using namespace std;
 
 // This function finds an entry in grid 
 // that is still unassigned 
-bool FindUnassignedLocation(int grid[N][N], 
-							int &row, int &col); 
+bool FindUnassignedLocation(int grid[N][N],int &row, int &col); 
 
 // Checks whether it will be legal 
 // to assign num to the given row, col 
@@ -53,12 +52,10 @@ bool SolveSudoku(int grid[N][N])
 } 
 
 /* Searches the grid to find an entry that is 
-still unassigned. If found, the reference 
-parameters row, col will be set the location 
-that is unassigned, and true is returned. 
+still unassigned. 
+If found, the reference parameters row, col will be set the location that is unassigned, and true is returned. 
 If no unassigned entries remain, false is returned. */
-bool FindUnassignedLocation(int grid[N][N], 
-							int &row, int &col) 
+bool FindUnassignedLocation(int grid[N][N], int &row, int &col) 
 { 
 	for (row = 0; row < N; row++) 
 		for (col = 0; col < N; col++) 
@@ -151,7 +148,7 @@ int main()
 } 
 
 
-Output:
+/* Output:
   3 1 6 5 7 8 4 9 2
   5 2 9 1 3 4 7 6 8
   4 8 7 6 2 9 5 3 1
@@ -161,3 +158,4 @@ Output:
   1 3 8 9 4 7 2 5 6
   6 9 2 3 5 1 8 7 4
   7 4 5 2 8 6 3 1 9
+*/

@@ -1,3 +1,6 @@
+/* To determine if an undirected graph can be colored with atmost m colors 
+such that no two adjacent vertices are colored with the same color */
+
 #include<bits/stdc++.h> 
 
 // Number of vertices in the graph 
@@ -5,11 +8,11 @@
 
 void printSolution(int color[]); 
 
-/* A utility function to check if the current color assignment 
-is safe for vertex v i.e. checks whether the edge exists or not 
+/* A utility function to check whether the edge exists or not 
 (i.e, graph[v][i]==1). If exist then checks whether the color to 
 be filled in the new vertex(c is sent in the parameter) is already 
 used by its adjacent vertices(i-->adj vertices) or not (i.e, color[i]==c) */
+
 bool isSafe (int v, bool graph[V][V], int color[], int c) 
 { 
 	for (int i = 0; i < V; i++) 
@@ -48,12 +51,8 @@ bool graphColoringUtil(bool graph[V][V], int m, int color[], int v)
 	return false; 
 } 
 
-/* This function solves the m Coloring problem using Backtracking. 
-It mainly uses graphColoringUtil() to solve the problem. It returns 
-false if the m colors cannot be assigned, otherwise return true and 
-prints assignments of colors to all vertices. Please note that there 
-may be more than one solutions, this function prints one of the 
-feasible solutions.*/
+/* This function returns false if the m colors cannot be assigned, otherwise return true and 
+prints assignments of colors to all vertices. */
 bool graphColoring(bool graph[V][V], int m) 
 { 
 	// Initialize all color values as 0. This initialization is needed 
@@ -104,6 +103,7 @@ int main()
 } 
 
 
-Output:
+/*Output:
 Solution Exists: Following are the assigned colors
 1  2  3  2
+*/

@@ -1,5 +1,5 @@
-/* C++ program for solution of Hamiltonian 
-Cycle problem using backtracking */
+// This program detects any Hamiltonian Cycle in a graph 
+
 #include <bits/stdc++.h> 
 using namespace std; 
 
@@ -74,13 +74,10 @@ bool hamCycleUtil(bool graph[V][V],
 	return false; 
 } 
 
-/* This function solves the Hamiltonian Cycle problem 
-using Backtracking. It mainly uses hamCycleUtil() to 
+/* It mainly uses hamCycleUtil() to 
 solve the problem. It returns false if there is no 
 Hamiltonian Cycle possible, otherwise return true 
-and prints the path. Please note that there may be 
-more than one solutions, this function prints one 
-of the feasible solutions. */
+and prints the path.*/
 bool hamCycle(bool graph[V][V]) 
 { 
 	int *path = new int[V]; 
@@ -152,8 +149,9 @@ int main()
 } 
 
 
-Output:
+/*Output:
 Solution Exists: Following is one Hamiltonian Cycle
  0  1  2  4  3  0
 
 Solution does not exist
+*/
