@@ -56,11 +56,14 @@ char Queue::deQueue()
 		front = -1; 
 		rear = -1; 
 	} 
-	else if (front == size-1) 
+	else if (front == size-1)
+	{
 		front = 0; 
+	}
 	else
+	{
 		front++; 
-
+	}
 	return data; 
 } 
 
@@ -89,40 +92,26 @@ void Queue::displayQueue()
 
 int main() 
 { 
-	Queue q(5); 
-    int N=1;
+    Queue q(5); 
+    int choice=1;
     do
     {
         cout<<"\n1. EnQueue 2. DeQueue 3. Exit : ";
-        cin>>N;
-        if(N==1)
+        cin>>choice;
+        if(choice==1)
         {
             char a;
             cin>>a;
             q.enQueue(a);
             q.displayQueue();
         }
-        else if(N==2)
+        else if(choice==2)
         {
             cout<<"\nDeleted value = "<<q.deQueue(); 
             cout<<endl;
             q.displayQueue();
         }
-    }while(N!=3);
+    }while(choice!=3);
     q.displayQueue();
-    /*
-	q.enQueue('A'); 
-	q.enQueue('B'); 
-	q.enQueue('C'); 
-	q.enQueue('D'); 
-	q.displayQueue(); 
-	cout<<"\nDeleted value = "<<q.deQueue(); 
-	cout<<"\nDeleted value = "<<q.deQueue(); 
-	q.displayQueue(); 
-	q.enQueue('E'); 
-	q.enQueue('F'); 
-	q.enQueue('G'); 
-	q.displayQueue(); 
-	q.enQueue('H'); */
-	return 0; 
+    return 0; 
 } 
