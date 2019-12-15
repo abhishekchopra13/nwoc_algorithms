@@ -19,23 +19,33 @@ int main()
                 cin>>A[++top];
             }
             else
+	    {
                 cout<<"Stack FULL"<<endl;
+	    }
         }
         else if(a==2)
         {
-        	cout<<"Poped Element : ";
+            cout<<"Poped Element : ";
             if(top!=-1)
             {
                 cout<<A[top--]<<endl;
             }
             else
+	    {
                 cout<<"Stack EMPTY";
+	    }
         }
         else
-            if(top!=-1)
-				cout<<A[top]<<endl;
-			else
-				cout<<"EMPTY "<<endl;
+	{    
+	    if(top!=-1)
+	    {
+		    cout<<A[top]<<endl;
+	    }
+	    else
+	    {
+		cout<<"EMPTY "<<endl;
+	    }
+    	}
         cout<<"Wanna Continue (Y/N) : ";
         cin>>ch;
     }
