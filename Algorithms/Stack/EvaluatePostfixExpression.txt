@@ -1,22 +1,21 @@
-// Evaluate Postfix Expression
-// Language Used: JAVA
+<!-- Evaluate Postfix Expression
+ Language Used: JAVA
 
-// Given a postfix expression, the task is to evaluate the expression and print the final value. Operators will only include the basic // arithmetic operators like *,/,+ and - . 
+Given a postfix expression, the task is to evaluate the expression and print the final value. Operators will only include the basic arithmetic operators like *,/,+ and - . 
 
-// Input format: The first line of input will contains an integer T denoting the no of test cases . Then T test cases follow. Each //	         test case contains an postfix expression.
+Input format: The first line of input will contains an integer T denoting the no of test cases . Then T test cases follow. Each test case contains an postfix expression.
 
-// Output format: For each test case, in a new line, evaluate the postfix expression and print the value.
+Output format: For each test case, in a new line, evaluate the postfix expression and print the value.
 
-// Sample Input :
-// 2
-// 231*+9-
-// 123+*8-
+Sample Input :
+2
+231*+9-
+123+*8-
 
 
-// Sample Output:
-// -4
-// -3
-
+Sample Output:
+-4
+-3		-->
 
 
 import java.util.*;
