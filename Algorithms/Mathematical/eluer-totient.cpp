@@ -1,5 +1,18 @@
 //Algorithm Name:Euler's Totient Function
 
+/*
+Explanation:
+The numbers from 1 to 5 which are co-prime with 5 are 1,2,3,4  i.e. 4 numbers.
+The Input takes an integer N.
+The output is the number of integers from 1 to N inclusive that are co-prime to N.
+Euler's totient function, also known as phi-function  counts the number of integers between 1 and n inclusive, which are coprime to n. 
+These numbers were found by mathematician Euler.
+
+The function EulerTotient computes number of integers between 1 and n inclusive, which are coprime to n. 
+and returns the result which is printed.
+For more information on Euler Totient : https://en.wikipedia.org/wiki/Euler%27s_totient_function
+*/
+
 #include<bits/stdc++.h>
 #define MOD 1000000007
 #define MOD9 1000000009
@@ -41,14 +54,5 @@ Sample Input:
 Sample Output:
 4
 
-Explanation:
-The numbers from 1 to 5 which are co-prime with 5 are 1,2,3,4  i.e. 4 numbers.
-The Input takes an integer N.
-The output is the number of integers from 1 to N inclusive that are co-prime to N.
-Euler's totient function, also known as phi-function  counts the number of integers between 1 and n inclusive, which are coprime to n. 
-These numbers were found by mathematician Euler.
 
-The function EulerTotient computes number of integers between 1 and n inclusive, which are coprime to n. 
-and returns the result which is printed.
-For more information on Euler Totient : https://en.wikipedia.org/wiki/Euler%27s_totient_function
 */
