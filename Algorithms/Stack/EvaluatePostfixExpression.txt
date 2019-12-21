@@ -34,13 +34,6 @@ class EvaluatePostfixExpression{
                 return first*second;
             case '/':
                 return second/first;
-            case '^':
-                int result=1;
-                for(int i=1;i<first;i++)
-                {
-                    result*=second;
-                }
-                return result;
             default:
                 return 0;
         }
