@@ -4,8 +4,8 @@ This is a library of various algorithms that are used in competitive programming
 
 ### Sample algorithm
 [disjoint_set_union.cpp](Algorithms/disjoint_set_union.cpp)
-### sample algorithm
 
+### Sample algorithm
 [disjoint_set_union.cpp](Algorithms/disjoint_set_union.cpp) <br />
 [Floyd_cycle_detection.cpp](Algorithms/Linked_List/Floyd_cycle_detection.cpp)
 
