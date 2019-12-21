@@ -1,37 +1,25 @@
 /*
-
 	Dijkstra's algorithm (or Dijkstra's Shortest Path First algorithm, SPF algorithm) is an algorithm for finding the 
 	shortest paths between nodes in a weighted graph, which may represent, for example, mobile or road networks.
-
 	It can be implemented in C++ using  :
 	1) Adjacency matrix representation
 	2) Adjacency List representation (using vector STL of C++)
 	3) Set STL of C++ 
 	4) PriorityQueue STL of C++
-
 	This code is implementation	of Dijkstra's algorithm using Adjacency list representation for Undirected weighted graph.
-
 	When to use Dijkstra's algorithm and Floyd Warshall algorithm ?
 	-> Dijkstra's algorithm is for single source and multiple destinations .
 	-> Floyd Warshall algorithm is for multiple sources and multiple destinations .
-
 */
 
 
 /*
-
-
 SAMPLE OUTPUT :
-
-
 Enter number of vertices
 4
-
 Enter number of edges
 5
-
 Undirected weighted graph
-
 Enter all edges one by one 
 Format for input : vertex1 vertex2 weight
 1 2 2
@@ -39,17 +27,13 @@ Format for input : vertex1 vertex2 weight
 1 4 4
 2 3 2
 4 2 15
-
 Enter the source vertex
 2
-
     Source    Destination   Shortest Distance
          2         1                   2
          2         2                   0
          2         3                   2
          2         4                   6
-
-
 */
 
 #include<bits/stdc++.h>
@@ -129,4 +113,3 @@ int main() {
 		cout <<setw(10)<<i + 1 <<setw(20)<< dist[i] << "\n";
 	}
 }
-
