@@ -22,17 +22,17 @@ typedef long long ll;
 using namespace std;
 
 
-ll EulerTotient(ll n) {
-    ll result = n;
-    for (ll i = 2; i * i <= n; i++) {
-        if(n % i == 0) {
-            while(n % i == 0)
-                n /= i;
+ll EulerTotient(ll euler_totient_for_n) {
+    ll result = euler_totient_for_n;
+    for (ll i = 2; i * i <= euler_totient_for_n; i++) {
+        if(euler_totient_for_n % i == 0) {
+            while(euler_totient_for_n % i == 0)
+                euler_totient_for_n /= i;
             result -= result / i;
         }
     }
-    if(n > 1)
-        result -= result / n;
+    if(euler_totient_for_n > 1)
+        result -= result / euler_totient_for_n;
     return result;
 }
 
@@ -40,10 +40,10 @@ ll EulerTotient(ll n) {
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);cout.tie(0);
-ll n;
-cin>>n;
-ll x=EulerTotient(n);
-cout<<x<<endl;
+ll euler_totient_for_n;
+cin>>euler_totient_for_n;
+ll answer=EulerTotient(euler_totient_for_n);
+cout<<answer<<endl;
   
   return 0;  
 }
