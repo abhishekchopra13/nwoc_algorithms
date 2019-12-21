@@ -1,5 +1,17 @@
 //Algorithm's Name: Catalan Number
 
+/* 
+Explanation:
+The Input takes an integer N and the output is the Nth Catalan Number.
+Catalan Numbers are (2nCn)/(n+1) where C is thee binomial coefficient.
+These are special types of numbers which denotes the pattern in many competitive coding contests.
+These numbers were found by Belgian mathematician Catalan.
+In Input give which Catalan number you want to find.
+The function catalan_number computes it and returns the result which is printed.
+For more information on Catalan Numbers:https://en.wikipedia.org/wiki/Catalan_number
+*/
+
+
 #include<bits/stdc++.h>
 #define MOD 1000000007
 #define MOD9 1000000009
@@ -44,12 +56,5 @@ Sample Input:
 Sample Output:
 42
 
-Explanation:
-The Input takes an integer N and the output is the Nth Catalan Number.
-Catalan Numbers are (2nCn)/(n+1) where C is thee binomial coefficient.
-These are special types of numbers which denotes the pattern in many competitive coding contests.
-These numbers were found by Belgian mathematician Catalan.
-In Input give which Catalan number you want to find.
-The function catalan_number computes it and returns the result which is printed.
-For more information on Catalan Numbers:https://en.wikipedia.org/wiki/Catalan_number
+
 */
