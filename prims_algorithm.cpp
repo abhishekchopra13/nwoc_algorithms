@@ -14,12 +14,12 @@ void primMST(int graph[V][V])
 
     for(int u = 1; u<V; u++)
     {
-        for(int i=0;i<V;i++)
+        for(int row=0;row<V;row++)
         {
-            if(graph[i][u] && graph[i][u]<key[u])
+            if(graph[row][u] && graph[row][u]<key[u])
             {
-                key[u] = graph[i][u];
-                parent[u] = i;
+                key[u] = graph[row][u];
+                parent[u] = row;
             }
         }
     }
