@@ -4,21 +4,19 @@ using namespace std;
 
 void primMST(int graph[V][V])
 {
-    bool mstSet[V];
+    
     int parent[V],key[V];
 
     for(int i=0;i<V;i++)
-    {
-        mstSet[i] = false;
         key[i]= INT_MAX;
-    }
+    
 
 
     for(int u = 1; u<V; u++)
     {
         for(int i=0;i<V;i++)
         {
-            if(graph[i][u]&&mstSet[i] == false && graph[i][u]<key[u])
+            if(graph[i][u] && graph[i][u]<key[u])
             {
                 key[u] = graph[i][u];
                 parent[u] = i;
