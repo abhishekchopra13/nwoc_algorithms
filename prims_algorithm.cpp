@@ -1,11 +1,22 @@
+
+/* Prim's Algorithm for finding Minimum Spanning Tree */
+
 #include <bits/stdc++.h>
 using namespace std;
+
+//V is the number of vertices
 #define V 5
+
+//Function for finding MST using Prims Algorithm
 
 void primMST(int graph[V][V])
 {
-    
+    //parent is used to store the index position
+    //key is used to store the value 
+ 
     int parent[V],key[V];
+
+    //All key values are initialized to maximum integer value
 
     for(int i=0;i<V;i++)
         key[i]= INT_MAX;
@@ -31,7 +42,7 @@ void primMST(int graph[V][V])
 }
 int main()
 {
-
+    // Variable graph contains the adjacency matrix of a graph
     int graph[V][V] = { { 0, 2, 0, 6, 0 },
                         { 2, 0, 3, 8, 5 },
                         { 0, 3, 0, 0, 7 },
@@ -44,3 +55,12 @@ int main()
 }
 
 
+/*
+Sample Output:
+
+Edge  Value
+1 - 0   2
+2 - 1   3
+3 - 0   6
+4 - 1   5
+*/
