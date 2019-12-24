@@ -2,9 +2,17 @@
 This is a library of various algorithms that are used in competitive programming.
 
 
+
+### Strings
+[Substitution_Cipher](Algorithms/Substitution_Cipher.cpp)
+
+### Last Men Standing
+[Last_Men_Standing.cpp](Algorithms/Last_Men_Standing)
+
 ### Sample algorithm
 [disjoint_set_union.cpp](Algorithms/disjoint_set_union.cpp) <br />
 [Floyd_cycle_detection.cpp](Algorithms/Linked_List/Floyd_cycle_detection.cpp)
+
 
 ### Bellman Ford Algorithm
  [Bellman Ford Algorithm](Bellman_Ford/BellmanFord.cpp)
