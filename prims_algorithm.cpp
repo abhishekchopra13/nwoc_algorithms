@@ -1,6 +1,22 @@
 
-/* Prim's Algorithm for finding Minimum Spanning Tree */
+/* Prim's Algorithm for finding Minimum Spanning Tree 
 
+Sample Input is already given in main function:
+
+        graph[V][V] = { { 0, 2, 0, 6, 0 },
+                        { 2, 0, 3, 8, 5 },
+                        { 0, 3, 0, 0, 7 },
+                        { 6, 8, 0, 0, 9 },
+                        { 0, 5, 7, 9, 0 } };
+
+Sample Output:
+
+Edge  Value
+1 - 0   2
+2 - 1   3
+3 - 0   6
+4 - 1   5
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -55,12 +71,3 @@ int main()
 }
 
 
-/*
-Sample Output:
-
-Edge  Value
-1 - 0   2
-2 - 1   3
-3 - 0   6
-4 - 1   5
-*/
