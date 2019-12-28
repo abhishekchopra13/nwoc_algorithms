@@ -6,6 +6,17 @@ This is a library of various algorithms that are used in competitive programming
 ### Strings
 [Substitution_Cipher](Algorithms/Substitution_Cipher.cpp)
 
+### Mathematical Algorithm
+[Euler's Totient function](Algorithms/Mathematical/Euler's_Totient_function.cpp) <br />
+[Factorization](Algorithms/Mathematical/Factorization.cpp) <br />
+[GCD by Euclidean algorithm](Algorithms/Mathematical/GCD_by_Euclidean_algorithm.cpp) <br />
+[LCM](Algorithms/Mathematical/LCM.cpp) <br />
+[Matrix Exponentiation](Algorithms/Mathematical/Matrix_Exponentiation.cpp) <br />
+[Pigeonhole Algorithm](Algorithms/Mathematical/Pigeonhole_Algorithm.cpp) <br />
+[Sieve of Eratosthenes](Algorithms/Mathematical/Sieve_of_Eratosthenes.cpp) <br />
+
+
+
 ### Last Men Standing
 [Last_Men_Standing.cpp](Algorithms/Last_Men_Standing)
 
