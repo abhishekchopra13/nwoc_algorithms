@@ -25,8 +25,8 @@ This is a library of various algorithms that are used in competitive programming
 [Selection Sort](Algorithms/Sorting/selection_sort.cpp)
 
 ### Mathematical Algorithms
-[Euler's Totient function](Algorithms\mathematical_algorithm\Euler's_Totient_function.cpp)
-[Factorization](Algorithms\mathematical_algorithm\Factorization.cpp)
+[Euler's Totient function](Algorithms/mathematical_algorithm/Euler's_Totient_function.cpp) <br/>
+[Factorization](Algorithms/mathematical_algorithm/Factorization.cpp) <br/>
 
 
 
