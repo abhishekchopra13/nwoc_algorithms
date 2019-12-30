@@ -26,7 +26,7 @@ This is a library of various algorithms that are used in competitive programming
 
 
 ### Bellman Ford Algorithm
- [Bellman Ford Algorithm](Algorithms/Bellman_Ford/BellmanFord.cpp)
+ [Bellman Ford Algorithm](Bellman_Ford/BellmanFord.cpp)
 
 ### Sorting algorithm 
 [Merge Sort](Algorithms/Sorting/merge_sort.cpp) <br/>
