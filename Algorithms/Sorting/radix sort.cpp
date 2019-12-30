@@ -1,8 +1,13 @@
 // C++ implementation of Radix Sort 
 // Sample input:
-// [170, 45, 75, 90, 802, 24, 2, 66]
+//Enter the number of data element to be sorted: 4
+//Element 1: 45
+//Element 2: 96
+//Element 3: 22
+//Element 4: 61
 // Sample output:
-// [2, 24, 45, 66, 75, 90, 170, 802]
+//Sorted data:
+// 22 45 61 96
 #include<iostream> 
 using namespace std; 
   
@@ -69,9 +74,22 @@ void print(int arr[], int num)
 // Driver program to test above functions 
 int main() 
 { 
-    int arr[] = {170, 45, 75, 90, 802, 24, 2, 66}; 
-    int num = sizeof(arr)/sizeof(arr[0]); 
-    radixsort(arr, num); 
-    print(arr, num); 
-    return 0; 
+      int num, i;
+     cout<<"\nEnter the number of data element to be sorted: ";
+	cin>>num;
+ 
+	int arr[num];
+	for(i = 0; i < num; i++)
+	{
+		cout<<"Enter element "<<i+1<<": ";
+		cin>>arr[i];
+	}
+ 
+	radixsort(arr, num);
+ 
+	// Printing the sorted data.
+	cout<<"\nSorted Data ";
+	for (i = 0; i < num; i++)
+		cout<<" "<<arr[i];
+	return 0;
 } 
