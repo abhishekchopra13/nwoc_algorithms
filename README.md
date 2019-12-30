@@ -17,12 +17,18 @@ This is a library of various algorithms that are used in competitive programming
 ### Bellman Ford Algorithm
  [Bellman Ford Algorithm](Bellman_Ford/BellmanFord.cpp)
 
-### Sorting algorithm 
+### Sorting algorithm
 [Merge Sort](Algorithms/Sorting/merge_sort.cpp) <br/>
 [Heap Sort](Algorithms/Sorting/heap_sort.cpp)<br/>
 [Insertion Sort](Algorithms/Sorting/insertion_sort.cpp) <br/>
 [Bubble Sort](Algorithms/Sorting/bubble_sort.cpp) <br/>
 [Selection Sort](Algorithms/Sorting/selection_sort.cpp)
+
+### Mathematical Algorithms
+[Euler's Totient function](Algorithms\mathematical_algorithm\Euler's_Totient_function.cpp)
+[Factorization](Algorithms\mathematical_algorithm\Factorization.cpp)
+
+
 
 ### String Hashing
 [Rabin Karp Algorithm](Algorithms/String_Hashing/rabin_karp.cpp)<br/>
