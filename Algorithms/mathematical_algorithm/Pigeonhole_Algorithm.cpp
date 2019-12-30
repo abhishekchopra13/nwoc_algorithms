@@ -1,22 +1,24 @@
 //PigeonHole is a sorting algorithm that is suitable for sorting lists of element
 //where the number of possible key values are approximately the same
+
+//C++ program for PIGEONHOLE ALGORITHM
 #include<bits/stdc++.h>
 using namespace std;
-void pigeonholeSort(int *arr,int n)
+void pigeonholeSort(int *arr,int total_number)
 {
-	int min=arr[0], max=arr[0];
-	for(int i=1;i<n;i++)
+	int minimum=arr[0], maximum=arr[0];
+	for(int i=1;i<total_number;i++)
 	{
-		if(arr[i]<min)
-		min=arr[i];
-		if(arr[i]>max)
-		max=arr[i];
+		if(arr[i]<minimum)
+		minimum=arr[i];
+		if(arr[i]>maximum)
+		maximum=arr[i];
 	}
-	int range = max-min+1;
+	int range = maximum-minimum+1;
 	vector<int> holes[range];
-	for(int i=0;i<n;i++)
+	for(int i=0;i<total_number;i++)
 	{
-		holes[arr[i]-min].push_back(arr[i]);
+		holes[arr[i]-minimum].push_back(arr[i]);
 	}
 	int index=0;
 	for(int i=0;i<range;i++)
@@ -28,19 +30,21 @@ void pigeonholeSort(int *arr,int n)
 		}
 	}
 }
+
+// Driver Code
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
-	int n;
+	int total_number;
 	cout<<"Enter the total number which are present in the array:"<<endl;
-	cin>>n;
-	int arr[n];
+	cin>>total_number;
+	int arr[total_number];
 	cout<<"Enter the element in the array:"<<endl;
-	for(int i=0;i<n;i++)  cin>>arr[i];
-	pigeonholeSort(arr,n);
+	for(int i=0;i<total_number;i++)  cin>>arr[i];
+	pigeonholeSort(arr,total_number);
 	cout<<"Sorted Array is:"<<endl;
-	for(int i=0;i<n;i++)
+	for(int i=0;i<total_number;i++)
 	{
 		cout<<arr[i]<<" ";
 	}
