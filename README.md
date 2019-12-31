@@ -4,7 +4,7 @@ This is a library of various algorithms that are used in competitive programming
 
 
 ### Strings
-* [Substitution_Cipher](Algorithms/Substitution_Cipher.cpp)
+* [Substitution_Cipher](https://github.com/NJACKWinterOfCode/nwoc_algorithms/tree/master/Algorithms/Substitution_Cipher)
 
 ### Last Men Standing
 * [Last_Men_Standing.cpp](Algorithms/Last_Men_Standing)
