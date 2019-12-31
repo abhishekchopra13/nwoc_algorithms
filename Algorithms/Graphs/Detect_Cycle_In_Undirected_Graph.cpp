@@ -14,24 +14,24 @@ bool isCyclicConntected(vector<int> adj[], int VertexToBeVisited,int NoOfVertice
 	vector<int> parent(NoOfVertices, -1); 
 
 	// Create a queue for BFS 
-	queue<int> q; 
+	queue<int> Queue; 
 
 	// Mark the current node as visited and enqueue it 
 	visited[VertexToBeVisited] = true; 
-	q.push(VertexToBeVisited); 
+	Queue.push(VertexToBeVisited); 
 
-	while (!q.empty()) { 
+	while (!Queue.empty()) { 
 
 		// Dequeue a vertex from queue and print it 
-		int u = q.front(); 
-		q.pop(); 
+		int u = Queue.front(); 
+		Queue.pop(); 
 
 		for (auto v : adj[u]) 
 		{ 
 			if (!visited[v]) 
 			{ 
 				visited[v] = true; 
-				q.push(v); 
+				Queue.push(v); 
 				parent[v] = u; 
 			} 
 			else if (parent[u] != v) 
@@ -55,11 +55,11 @@ bool isCyclicDisconntected(vector<int> adj[], int V)
 int main() 
 { 
 	cout<<"enter the number of vertices : ";
-	int V ;//V stands for Number of Verticies
-	cin>>V;
+	int NoOfVertices ;
+	cin>>NoOfVertices;
 	//adj[V] is 2D vector to store the connection between 2 vertices
 	int vertex1,vertex2;
-	vector<int> adj[V]; 
+	vector<int> adj[NoOfVertices]; 
 	do{
 		char ch;
 		cout<<"Enter Edge Details :\n";
@@ -71,7 +71,7 @@ int main()
 		cout<<"wanna add more edges(y/n):";
 		cin>>ch;
 	}while(ch!='y');
-	if (isCyclicDisconntected(adj, V)) 
+	if (isCyclicDisconntected(adj, NoOfVertices)) 
 		cout << "Yes"; 
 	else
 		cout << "No"; 
