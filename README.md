@@ -22,17 +22,18 @@ This is a library of various algorithms that are used in competitive programming
 [Floyd_cycle_detection.cpp](Algorithms/Linked_List/Floyd_cycle_detection.cpp)
 
 ### Sorting algorithm 
-[Merge Sort](Algorithms/Sorting/merge_sort.cpp) <br/>
+[Bubble Sort](Algorithms/Sorting/bubble_sort.cpp) <br/>
 [Heap Sort](Algorithms/Sorting/heap_sort.cpp)<br/>
 [Insertion Sort](Algorithms/Sorting/insertion_sort.cpp) <br/>
-[Bubble Sort](Algorithms/Sorting/bubble_sort.cpp) <br/>
+[Merge Sort](Algorithms/Sorting/merge_sort.cpp) <br/>
 [Selection Sort](Algorithms/Sorting/selection_sort.cpp)
 
 ### Strings
 [Substitution_Cipher](https://github.com/NJACKWinterOfCode/nwoc_algorithms/tree/master/Algorithms/Substitution_Cipher)
 
 ### String Hashing
-[Rabin Karp Algorithm](Algorithms/String_Hashing/rabin_karp.cpp)<br/>
 [Count_Substring](Algorithms/String_Hashing/count_substr.cpp) <br/>
-[Z Algorithm](Algorithms/String_Hashing/z-algorithm.cpp)<br/>
+[Rabin Karp Algorithm](Algorithms/String_Hashing/rabin_karp.cpp)<br/>
 [Manacher Algorithm](Algorithms/String_Hashing/manacher.cpp) <br/>
+[Z Algorithm](Algorithms/String_Hashing/z-algorithm.cpp)<br/>
+
