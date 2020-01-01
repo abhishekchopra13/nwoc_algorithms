@@ -8,6 +8,10 @@ This is a library of various algorithms that are used in competitive programming
 
 ### Bellman Ford Algorithm
  [Bellman Ford Algorithm](Bellman_Ford/BellmanFord.cpp)
+(Algorithms/.cpp)
+
+### Greedy Algorithm
+[Egyptian Fraction](https://github.com/NJACKWinterOfCode/nwoc_algorithms/pull/116/commits/a660bb5ca89951b744ae27ebc808c6e032ea6053)(Algorithms/EgyptianFractions.cpp)
 
 ### Sorting algorithm 
 [Merge Sort](Algorithms/Sorting/merge_sort.cpp) <br/>
