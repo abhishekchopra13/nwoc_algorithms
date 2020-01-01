@@ -1,10 +1,11 @@
 # nwoc_algorithms
 This is a library of various algorithms that are used in competitive programming.
 
-
-
 ### Strings
 * [Substitution_Cipher](https://github.com/NJACKWinterOfCode/nwoc_algorithms/tree/master/Algorithms/Substitution_Cipher)
+
+### Bellman Ford Algorithm
+ [Bellman Ford Algorithm](Bellman_Ford/BellmanFord.cpp)
 
 ### Last Men Standing
 * [Last_Men_Standing.cpp](Algorithms/Last_Men_Standing)
@@ -12,7 +13,6 @@ This is a library of various algorithms that are used in competitive programming
 ### Sample algorithm
 * [disjoint_set_union.cpp](Algorithms/disjoint_set_union.cpp) <br />
 * [Floyd_cycle_detection.cpp](Algorithms/Linked_List/Floyd_cycle_detection.cpp)
-
 
 ### Bellman Ford Algorithm
 * [Bellman Ford Algorithm](Bellman_Ford/BellmanFord.cpp)
@@ -25,6 +25,7 @@ This is a library of various algorithms that are used in competitive programming
 * [Selection Sort](Algorithms/Sorting/selection_sort.cpp)
 
 ### String Hashing
+
 * [Rabin Karp Algorithm](Algorithms/String_Hashing/rabin_karp.cpp)<br/>
 * [Count_Substring](Algorithms/String_Hashing/count_substr.cpp) <br/>
 * [Z Algorithm](Algorithms/String_Hashing/z-algorithm.cpp)<br/>
@@ -43,3 +44,4 @@ This is a library of various algorithms that are used in competitive programming
 * [Dijkstra's Algorithm](https://github.com/NJACKWinterOfCode/nwoc_algorithms/blob/master/Algorithms/Graphs/Dijkstra's%20Algorithm.cpp)<br/>
 * [Kruskal's Algorithm](https://github.com/NJACKWinterOfCode/nwoc_algorithms/blob/master/Algorithms/Graphs/Kruskal's%20Algorithm.cpp)<br/>
 * [Breadth_First_Search](Algorithms/Graphs/breadth_first_search.cpp)<br/>
+
