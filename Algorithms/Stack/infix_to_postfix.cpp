@@ -5,7 +5,7 @@
 using namespace std;
 
 
-    string removeSpaces(string s)
+    string removeSpaces(string s)  //Removes spaces from input
     {
         s.erase(remove(s.begin(), s.end(), ' '), s.end());
         return s;
@@ -16,7 +16,7 @@ using namespace std;
        return (!isalpha(c) && !isdigit(c));
     }
 
-    int getPriority(char C)
+    int getPriority(char C)  //Checks Priority of operators
     {
       if (C == '-' || C == '+')
         return 1;
@@ -27,7 +27,7 @@ using namespace std;
       return 0;
     }
 
-    string infixToPostfix(string infix)
+    string infixToPostfix(string infix) //Conversion
     {
       infix = '(' + infix + ')';
       int l = infix.size();
@@ -61,51 +61,6 @@ using namespace std;
       return output;
     }
 
-    string infixToPrefix(string infix)
-    {
-      int l = infix.size();
-      reverse(infix.begin(), infix.end());
-      for (int i = 0; i < l; i++) {
-        if (infix[i] == '(') {
-          infix[i] = ')';
-          i++;
-        }
-        else if (infix[i] == ')') {
-          infix[i] = '(';
-          i++;
-        }
-      }
-
-      string prefix = infixToPostfix(infix);
-      reverse(prefix.begin(), prefix.end());
-      return prefix;
-    }
-
-
-int postfixEval(string exp) {
-   stack <int> x;
-   for (int i = 0; exp[i]; ++i)
-    {
-        if (isdigit(exp[i]))
-            x.push(exp[i] - '0');
-
-        else
-        {
-            int val1 = x.top();
-            x.pop();
-            int val2 = x.top();
-            x.pop();
-            switch (exp[i])
-            {
-            case '+': x.push( val2 + val1); break;
-            case '-': x.push( val2 - val1); break;
-            case '*': x.push(val2 * val1); break;
-            case '/': x.push( val2/val1); break;
-            }
-        }
-    }
-    return x.top();
-}
 
 
     int main()
@@ -117,12 +72,6 @@ int postfixEval(string exp) {
       if(s.size()>=1){
       s=removeSpaces(s);
       cout<<"Postfix : "<<infixToPostfix(s)<<endl;
-      cout<<"Prefix : "<<infixToPrefix(s)<<endl;
-      s=infixToPostfix(s);
-      value=postfixEval(s);
-      cout<<"Value : "<<value<<endl;
       }
-      else
-      cout<<"Value : 0"<<endl;
       return 0;
     }
