@@ -1,30 +1,43 @@
+// Program for sorting array using Quick Sort
+// Quick Sort is very useful sorting algorithm used as its time complexity is O(nlogn), where n refers to number of elements
+
+/* 
+INPUT
+Enter number of elements 5
+Enter elements 4 8 2 6 5
+
+OUTPUT
+Sorted array: 2 4 5 6 8 
+*/
+
+
 #include <bits/stdc++.h> 
 using namespace std;  
   
 // A utility function to swap two elements  
-void swap(int* a, int* b)  
+void swap(int* ax, int* bx)  
 {  
-    int t = *a;  
-    *a = *b;  
-    *b = t;  
+    int temp = *ax;  
+    *ax = *bx;  
+    *bx = temp;  
 }  
   
 // Function to create the partition of Array from Low to High
 int partition (int arr[], int low, int high)  
 {  
     int pivot = arr[high]; 
-    int i = (low - 1); 
+    int index = (low - 1); 
   
-    for (int j = low; j <= high - 1; j++)  
+    for (int jx = low; jx <= high - 1; jx++)  
     {  
-        if (arr[j] < pivot)  
+        if (arr[jx] < pivot)  
         {  
-            i++;
-            swap(&arr[i], &arr[j]);  
+            index++;
+            swap(&arr[index], &arr[jx]);  
         }  
     }  
-    swap(&arr[i + 1], &arr[high]);  
-    return (i + 1);  
+    swap(&arr[index + 1], &arr[high]);  
+    return (index + 1);  
 }  
   
 // Function to implement QuickSort
@@ -42,20 +55,25 @@ void quickSort(int arr[], int low, int high)
 // Function to print an array 
 void printArray(int arr[], int size)  
 {  
-    int i;  
-    for (i = 0; i < size; i++)  
-        cout << arr[i] << " ";  
+    int index;  
+    for (index = 0; index < size; index++)  
+        cout << arr[index] << " ";  
     cout << endl;  
 }  
   
 // Driver Code 
 int main()  
 {  
-    int arr[] = {10, 7, 8, 9, 1, 5};  
-    int n = sizeof(arr) / sizeof(arr[0]);  
-    quickSort(arr, 0, n - 1);  
+    int num, index;
+    cout<<"Enter number of elements";
+    cin>>num;
+    int arr[num];
+    cout<<"Enter elements"<<endl;
+    for (index =0; index<num; index++)
+        cin>>arr[index];
+    quickSort(arr, 0, num - 1);  
     cout << "Sorted array: ";  
-    printArray(arr, n);  
+    printArray(arr, num);  
     return 0;  
 }  
   
