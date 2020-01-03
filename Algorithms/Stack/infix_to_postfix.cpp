@@ -1,3 +1,11 @@
+//Infix to Postfix Converter
+//Language Used: C++
+//Infix to Postfix Converter Algorithm uses Stack to convert given Infix expression to Postfix
+//Input Format: Input contains only one line i.e., Infix Expression
+//Output Format: Output contains only one line i.e., Postfix Expression
+//Sample Input:  3*(7-9)
+//Sample Output: 379-*
+//author: adiXcodr
 
 #include <bits/stdc++.h>
 #include<string>
@@ -5,10 +13,10 @@
 using namespace std;
 
 
-    string removeSpaces(string s)  //Removes spaces from input
+    string removeSpaces(string str)  //Removes spaces from input
     {
-        s.erase(remove(s.begin(), s.end(), ' '), s.end());
-        return s;
+        str.erase(remove(str.begin(), str.end(), ' '), str.end());
+        return str;
     }
 
     bool isOperator(char c)
@@ -65,13 +73,12 @@ using namespace std;
 
     int main()
     {
-      int value;
-      string s;
-      cout<<"Enter Infix expression here\n";
-      getline(cin,s);
-      if(s.size()>=1){
-      s=removeSpaces(s);
-      cout<<"Postfix : "<<infixToPostfix(s)<<endl;
+      string infix;
+      cout<<"Enter Infix expression here : ";
+      getline(cin,infix);
+      if(infix.size()>=1){
+      infix=removeSpaces(infix);
+      cout<<"Postfix : "<<infixToPostfix(infix);
       }
       return 0;
     }
