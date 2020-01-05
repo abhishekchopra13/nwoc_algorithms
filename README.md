@@ -25,7 +25,7 @@ This is a library of various algorithms that are used in competitive programming
 [Kruskal](Algorithms/Graphs/Kruskal's%20Algorithm.cpp)
 
 ### Greedy Algorithm
-[Egyptian Fraction](Algorithms/EgyptianFractions.cpp)
+[Egyptian Fraction](EgyptianFractions.cpp)
 
 ### Kadane Algorithm
 [Kadane Algorithm](Kadane/kadane.cpp)
