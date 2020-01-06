@@ -1,4 +1,9 @@
 // C++ program to implement recursive Binary Search 
+  // Sample input:
+  // [2,3,4,10,40]
+  // 10
+  // Sample Output:
+  // Element is present at index 3
 #include <iostream> 
 using namespace std; 
   
@@ -27,13 +32,14 @@ int binarySearch(int arr[], int l, int r, int x)
     // not present 
     return -1; 
 } 
+
   
 int main(void) 
 { 
-    int arr[] = { 2, 3, 4, 10, 40 }; 
-    int x = 10; 
-    int n = sizeof(arr) / sizeof(arr[0]); 
-    int result = binarySearch(arr, 0, n - 1, x); 
+    int array[] = { 2, 3, 4, 10, 40 }; 
+    int target = 10; 
+    int size = sizeof(array) / sizeof(array[0]); 
+    int result = binarySearch(array, 0, size - 1, target); 
     (result == -1) ? cout << "Element is not present in array"
                    : cout << "Element is present at index " << result; 
     return 0; 

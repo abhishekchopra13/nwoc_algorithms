@@ -23,6 +23,6 @@ All algorithms must be implemented in C++.
 
 1. Make a folder for your algorithm. The folder name should be descriptive. Use underscores instead of spaces.
 2. Put your program in that folder. Keep the program name as similar as possible to the folder name.
-3. Add documentation for your program.Algorithms without a basic documentation (description, input/output format, sample input/output) will **not** be accepted. See [disjoint_set_union.cpp](Algorithms/disjoint_set_union/disjoint_set_union.cpp) for example.
+3. Add documentation for your program.Algorithms without a basic documentation (description, input/output format, sample input/output) will **not** be accepted. See [README.md](https://github.com/NJACKWinterOfCode/nwoc_algorithms/tree/master/Algorithms/Substitution_Cipher) for correct example.
 4. Update the List of Algorithms in [README](README.md) with your algorithm.
 5. Commit and push the changes, then submit a Pull Request.
