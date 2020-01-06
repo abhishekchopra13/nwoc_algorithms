@@ -1,7 +1,7 @@
+
+=======
 # nwoc_algorithms
 This is a library of various algorithms that are used in competitive programming.
-
-
 
 ### Backtracking Algorithms
 [Hamiltonian Cycle](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/Hamiltonian%20Cycle.cpp)<br/>
@@ -24,8 +24,12 @@ This is a library of various algorithms that are used in competitive programming
 [Dijkstra](Algorithms/Graphs/Dijkstra's%20Algorithm.cpp) <br/>
 [Kruskal](Algorithms/Graphs/Kruskal's%20Algorithm.cpp)
 
+### Greedy Algorithm
+[Egyptian Fraction](EgyptianFractions.cpp)
+
 ### Kadane Algorithm
 [Kadane Algorithm](Kadane/kadane.cpp)
+
 
 ### Last Men Standing
 [Last Men Standing](Algorithms/Last_Men_Standing)
@@ -66,3 +70,4 @@ This is a library of various algorithms that are used in competitive programming
 
 ### Tower Of Hanoi
 [Tower of Hanoi](towerofhanoi.c)
+
