@@ -61,6 +61,8 @@ This is a library of various algorithms that are used in competitive programming
 [Bubble Sort](Algorithms/Sorting/bubble_sort.cpp) <br/>
 [Heap Sort](Algorithms/Sorting/heap_sort.cpp)<br/>
 [Insertion Sort](Algorithms/Sorting/insertion_sort.cpp) <br/>
+[Selection Sort](Algorithms/Sorting/selection_sort.cpp)<br/>
+[Shell Sort](Algorithms/Sorting/ShellSort.cpp)
 [Merge Sort](Algorithms/Sorting/merge_sort.cpp) <br/>
 [Radix Sort](Algorithms/Sorting/radix%20sort.cpp) <br/>
 [Selection Sort](Algorithms/Sorting/selection_sort.cpp)
