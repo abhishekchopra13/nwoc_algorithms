@@ -46,6 +46,10 @@ This is a library of various algorithms that are used in competitive programming
 [Jump Search](Algorithms/Searching/jumpsearch.cpp) <br/>
 [Linear Search](Algorithms/Searching/Linear_Search.cpp)
 
+### Graph Algorithm
+[breadth first search](Algorithms/Graphs/breadth_first_search.cpp)<br/>
+[Depth first Search](Algorithms/Graphs/Depth_first_search/depth_first_search.cpp)
+=======
 ### Sorting algorithm 
 [Bubble Sort](Algorithms/Sorting/bubble_sort.cpp) <br/>
 [Heap Sort](Algorithms/Sorting/heap_sort.cpp)<br/>
@@ -61,6 +65,7 @@ This is a library of various algorithms that are used in competitive programming
 
 ### Strings
 [Substitution Cipher](https://github.com/NJACKWinterOfCode/nwoc_algorithms/tree/master/Algorithms/Substitution_Cipher)
+
 
 ### String Hashing
 [Count Substring](Algorithms/String_Hashing/count_substr.cpp) <br/>
