@@ -1,7 +1,14 @@
 
-=======
 # nwoc_algorithms
 This is a library of various algorithms that are used in competitive programming.
+
+# Combination Computation
+[combination_by_eluer_method.cpp](Algorithms/Combination/combination_by_eluer_method.cpp)is a algorithm to compute the combinations of large numbers. Since in competitive programming we often deal with large numbers so computing combination becomes difficult therefore Eluer method provide an easy and fast way to compute nCr%1000000007 of big numbers.
+
+# Detecting cycles in Graph
+[cycle_in_directed_graph.cpp](Algorithms/Graphs/cycle_in_directed_graph.cpp) and [cycle_in_undirected_graph.cpp](Algorithms/Graphs/cycle_in_undirected_graph.cpp) are two algorithms which detect cycles in a graph by DFS algorithm.
+### sample algorithm
+[disjoint_set_union.cpp](Algorithms/disjoint_set_union/disjoint_set_union.cpp)
 
 ### Backtracking Algorithms
 [Hamiltonian Cycle](https://github.com/SubhradeepSS/nwoc_algorithms/blob/master/Algorithms/Backtracking/Hamiltonian%20Cycle.cpp)<br/>
@@ -49,7 +56,7 @@ This is a library of various algorithms that are used in competitive programming
 ### Graph Algorithm
 [breadth first search](Algorithms/Graphs/breadth_first_search.cpp)<br/>
 [Depth first Search](Algorithms/Graphs/Depth_first_search/depth_first_search.cpp)
-=======
+
 ### Sorting algorithm 
 [Bubble Sort](Algorithms/Sorting/bubble_sort.cpp) <br/>
 [Heap Sort](Algorithms/Sorting/heap_sort.cpp)<br/>
